@@ -65,4 +65,4 @@ baby_names = pd.read_csv(".learn/assets/us_baby_names_right.csv")
 
 #print(baby_names.value_counts('Gender'))
 
-print(len(baby_names.groupby('Name').sum()))
+print(len(sum(baby_names.groupby('Name'))))
